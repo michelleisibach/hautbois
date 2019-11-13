@@ -1,17 +1,18 @@
 <?php
-defined('BASEPATH') or exit('No direct script access allowed');
+defined('BASEPATH') OR exit('No direct script access allowed');
 
-class HomeController extends CI_Controller
-{
-   function __construct()
-   {
-       parent:: __construct();
-       $this->load->database();
-       $this->load->model('Home_model');
-   }
-
-   public function index(){
-       $this->data['movies'] = $this->Home_model->getMovies();
-       $this->load->view('homeView', $this->data);
-   }
+class HomeController extends CI_Controller {
+    public function __construct()
+    {
+        parent:: __construct();
+        $this->load->model('Home_model');
+    }
+    
+    
+    public function index()
+	{
+        $data['result'] = $this->Home_model->getAllMovies();
+        $this->load->view('homeView', $data);
+        $this->load->helper('url');
+	}
 }

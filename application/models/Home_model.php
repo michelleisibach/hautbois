@@ -1,9 +1,16 @@
 <?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
 class Home_model extends CI_Model{
-    function getMovies(){
-        $this->db->select("Film_ID,Name,Year,Genre,Description,Url");
-        $this->db->from('filme');
-        $query = $this->db->get();
+    public function __construct()
+    {
+        $this->load->database();
+    }
+    
+    function getAllMovies(){
+        $query = $this->db->query('SELECT * FROM filme');
         return $query->result();
     }
+
+
 }
