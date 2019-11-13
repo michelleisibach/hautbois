@@ -14,14 +14,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 <body>
     <br>
     <br>
-    <div class="container.fluid">
-        <div class="row">
-            <div class="col-4"> Test </div>
-            <div class="col-8"> Test
 
-            </div>
-        </div>
-    </div>
 </body>
 
 </html>
