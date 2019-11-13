@@ -20,14 +20,17 @@ defined('BASEPATH') or exit('No direct script access allowed');
             <div class="col-4"> test </div>
             <div class="col-8">
                 <?php foreach ($result as $movie) { ?>
-                <div class="movie">
-                    <?php echo $movie->Name; ?>
+                    <div class="movie">
+                        <div class="moviecontent">
+                            <p class="moviebox"> <?php echo $movie->Name; ?></p>
+                            <p class="moviebox"> <?php echo $movie->Description; ?> </p>
+                            <p class="moviebox"> <?php echo $movie->Year; ?></p>
+                            <p class="moviebox"> <?php echo $movie->Genre; ?> </p>
+                        </div>
+                    </div>
                     <br>
-                    <?php echo $movie->Description ?>
                     <br>
-                    <br>
-                </div>
-            <?php } ?>
+                <?php } ?>
             </div>
         </div>
     </div>

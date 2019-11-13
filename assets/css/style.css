@@ -9,3 +9,21 @@ body {
 .col-8 {
     background-color: red;
 }
+
+.movie {
+    background-color: green;
+    font-size: 20px;
+    margin-right: 2%;
+    margin-top: 2%;
+    box-shadow: 10px 10px 10px blue;
+    border-radius: 25px;
+    margin-left: 2%;
+}
+
+.moviecontent {
+    margin-left: 2%;
+}
+
+.moviebox {
+    color: yellow;
+}
