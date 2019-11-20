@@ -21,12 +21,16 @@ defined('BASEPATH') or exit('No direct script access allowed');
             <div class="col-8">
                 <?php foreach ($result as $movie) { ?>
                     <div class="movie">
-                        <div class="moviecontent">
+                        <div class="moviecontent col">
+                            <br>
                             <p class="moviebox"> <?php echo $movie->Name; ?></p>
                             <p class="moviebox"> <?php echo $movie->Description; ?> </p>
                             <p class="moviebox"> <?php echo $movie->Year; ?></p>
                             <p class="moviebox"> <?php echo $movie->Genre; ?> </p>
-                        </div>
+                            <input type="button" value="Reservieren">
+                            <br>
+                            <br>
+                        </div>                        
                     </div>
                     <br>
                     <br>
