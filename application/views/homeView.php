@@ -30,7 +30,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                             <input type="button" value="Reservieren">
                             <br>
                             <br>
-                        </div>                        
+                        </div>
                     </div>
                     <br>
                     <br>
