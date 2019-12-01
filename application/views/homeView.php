@@ -31,7 +31,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 <div class="moviecontent col">
                     <br>
                     <div class="row">
-                        <div class="col-3">
+                        <div class="col-5">
                             <div class="moviedescription">
                                 <div><?php echo $movie->Name; ?> </div>
                                 <div> <?php echo $movie->Description; ?> </div>
@@ -41,8 +41,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
                             </div>
                         </div>
 
-                        <div class="col-7" style="background-image:url(<?php echo base_url(); ?>assets/pics/<?php echo $movie->Url; ?>);">
-
+                        <div class="col-5">
+                            <div class="moviepicture">
+                                <div> <img class="moviepic" src="<?php echo base_url() ?>assets/pics/<?php echo $movie->Url; ?>"> </div>
+                            </div>
                         </div>
 
 
