@@ -21,7 +21,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
             <div class="col-8">
                 <h1 class="title"> HAUTBOIS Ltd. </h1>
             </div>
-            <div class="col-2"> </div>
+            <div class="col-2"><a class="emplogin"> Employee Login </a></div>
         </div>
     </div>
 
@@ -30,11 +30,23 @@ defined('BASEPATH') or exit('No direct script access allowed');
             <div class="movie">
                 <div class="moviecontent col">
                     <br>
-                    <p class="moviebox"> <?php echo $movie->Name; ?></p>
-                    <p class="moviebox"> <?php echo $movie->Description; ?> </p>
-                    <p class="moviebox"> <?php echo $movie->Year; ?></p>
-                    <p class="moviebox"> <?php echo $movie->Genre; ?> </p>
-                    <input type="button" value="Reservieren">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="moviedescription">
+                                <div><?php echo $movie->Name; ?> </div>
+                                <div> <?php echo $movie->Description; ?> </div>
+                                <div> <?php echo $movie->Year; ?></div>
+                                <div> <?php echo $movie->Genre; ?> </div>
+                                <input type="button" value="Reservieren" class="movieboxreserve">
+                            </div>
+                        </div>
+
+                        <div class="col-7" style="background-image:url(<?php echo base_url(); ?>assets/pics/<?php echo $movie->Url; ?>);">
+
+                        </div>
+
+
+                    </div>
                     <br>
                     <br>
                 </div>
