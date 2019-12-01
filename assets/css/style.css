@@ -1,23 +1,26 @@
 body {
-    background-color: green;
+    background-color: #1C1C1C;
+    font-family: 'Bebas Neue', cursive;
 }
 
 .col-4 {
-    background-color: fuchsia;
+    background-color: #1C1C1C;
+    color: lightgray;
 }
 
 .col-8 {
-    background-color: red;
+    background-color: #1C1C1C;
 }
 
 .movie {
-    background-color: gold;
-    font-size: 20px;
-    margin-right: 2%;
+    border-color: rgb(155, 155, 28);
+    border-style: solid;
+    background-color: #6E6E6E;
+    font-size: 15px;
+    margin-right: 5%;
     margin-top: 2%;
-    box-shadow: 10px 10px 10px 10px blue;
     border-radius: 25px;
-    margin-left: 2%;
+    margin-left: 5%;
 }
 
 .moviecontent {
@@ -25,5 +28,13 @@ body {
 }
 
 .moviebox {
+    color: white;
+}
+
+.title {
     color: yellow;
+    margin-left: 25%;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 150px;
+    text-shadow: 3px 3px 2px gray;
 }

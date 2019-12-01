@@ -9,35 +9,40 @@ defined('BASEPATH') or exit('No direct script access allowed');
     <title>hautbois Ltd.</title>
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body style="background-color: #1C1C1C">
     <br>
     <br>
     <div class="container.fluid">
         <div class="row">
-            <div class="col-4"> test </div>
+            <div class="col-2"> </div>
             <div class="col-8">
-                <?php foreach ($result as $movie) { ?>
-                    <div class="movie">
-                        <div class="moviecontent col">
-                            <br>
-                            <p class="moviebox"> <?php echo $movie->Name; ?></p>
-                            <p class="moviebox"> <?php echo $movie->Description; ?> </p>
-                            <p class="moviebox"> <?php echo $movie->Year; ?></p>
-                            <p class="moviebox"> <?php echo $movie->Genre; ?> </p>
-                            <input type="button" value="Reservieren">
-                            <br>
-                            <br>
-                        </div>
-                    </div>
-                    <br>
-                    <br>
-                <?php } ?>
+                <h1 class="title"> HAUTBOIS Ltd. </h1>
             </div>
+            <div class="col-2"> </div>
         </div>
     </div>
+
+    <?php foreach ($result as $movie) { ?>
+        <div class="movieborder">
+            <div class="movie">
+                <div class="moviecontent col">
+                    <br>
+                    <p class="moviebox"> <?php echo $movie->Name; ?></p>
+                    <p class="moviebox"> <?php echo $movie->Description; ?> </p>
+                    <p class="moviebox"> <?php echo $movie->Year; ?></p>
+                    <p class="moviebox"> <?php echo $movie->Genre; ?> </p>
+                    <input type="button" value="Reservieren">
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+    <?php } ?>
 </body>
 
 </html>
