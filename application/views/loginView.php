@@ -21,9 +21,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
             <div class="col-8">
                 <h1 class="title"> HAUTBOIS Ltd. </h1>
             </div>
-            <div class="col-2"><a class="emplogin" href="LoginController"></a></div>
+            <div class="col-2"></a></div>
         </div>
-    </div>
+    </div>  
 </body>
 
 </html>
