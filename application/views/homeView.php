@@ -19,9 +19,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
         <div class="row">
             <div class="col-2"> </div>
             <div class="col-8">
-                <h1 class="title"> HAUTBOIS Ltd. </h1>
+                <h1 class="title"> <a href="<?php echo base_url();?>/index.php/HomeController"> HAUTBOIS Ltd. </a> </h1>
             </div>
-            <div class="col-2"><a class="emplogin"> Employee Login </a></div>
+            <div class="col-2"><a class="emplogin" href="<?php echo base_url();?>/index.php/LoginController"> Employee Login </a></div>
         </div>
     </div>
 
